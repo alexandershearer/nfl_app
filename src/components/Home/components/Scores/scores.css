@@ -1,0 +1,38 @@
+.sideGame{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-top: solid 1px black;
+    padding: 20px;
+
+}
+.sideGame p{
+    margin-bottom: 0;
+}
+
+.teamLogo{
+    width: 36px;
+    height: 36px;
+}
+
+.teamOne{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 45%;
+}
+
+.teamOne img{
+    margin-right: auto;
+}
+
+.teamTwo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 45%;
+}
+
+.teamTwo img{
+    margin-left: auto;
+}
