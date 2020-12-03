@@ -15,6 +15,6 @@
 
 .navbarLink:hover{
     text-decoration: none;
-    color: red;
+    color: rgb(66, 180, 66);
     transition: 0.3s;
 }
