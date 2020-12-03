@@ -1,7 +1,20 @@
 .Navbar{
-    justify-content: center;
+    justify-content: space-evenly;
     border-bottom: 2px solid grey;
     background-color: rgb(255, 255, 255);
-    font-size: larger;
-    font-weight: 600;
+    font-size: x-large;
+    font-weight: 700;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.navbarLink{
+    color: black;
+    transition: 0.5s;
+}
+
+.navbarLink:hover{
+    text-decoration: none;
+    color: red;
+    transition: 0.3s;
 }

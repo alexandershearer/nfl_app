@@ -61,7 +61,7 @@ class Home extends Component {
         } else if (!this.state.isLoaded) {
             return <h1>Loading..</h1>
         } else {
-            console.log(this.state.news)
+            console.log(this.state.scores)
             return (
                 <div>
                     <HomeCarousel />

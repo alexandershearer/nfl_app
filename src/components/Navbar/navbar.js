@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 import { Nav } from 'react-bootstrap'
 import './navbar.css'
 
@@ -14,20 +15,39 @@ class Navbar extends Component {
             <div>
                 <Nav
                     className="Navbar"
-                    activeKey="/home"
-                    onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
                 >
                     <Nav.Item>
-                        <Nav.Link href="/home">Home</Nav.Link>
+                        <NavLink
+                            className="navbarLink"
+                            activeClassName=""
+                            exact
+                            to="/"
+                        >
+                            Home
+                        </NavLink>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1">News</Nav.Link>
+                        <NavLink
+                            className="navbarLink"
+                            activeClassName=""
+                            exact
+                            to="/records"
+                        >
+                            Records
+                        </NavLink>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2">Not Decided</Nav.Link>
+                        <NavLink
+                            className="navbarLink"
+                            activeClassName=""
+                            exact
+                            to="/"
+                        >
+                            Not Decided
+                        </NavLink>
                     </Nav.Item>
                 </Nav>
-            </div>
+            </div >
         )
     }
 

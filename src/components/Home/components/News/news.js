@@ -20,8 +20,8 @@ class News extends Component {
                 <div key={i} >
                     <Media className="newsMedia">
                         <img
-                            width={270}
-                            height={200}
+                            width={290}
+                            height={230}
                             className="align-self-center mr-3 newsPicture"
                             src={photo_url}
                             alt="Generic placeholder"
@@ -43,7 +43,7 @@ class News extends Component {
         } else {
             return (
                 <Col lg={8} className="newsCol">
-                    <h1 className="newsHeader">News</h1>
+                    <h1 className="newsHeader">Recent News</h1>
                     {this.getNews()}
                 </Col>
             )

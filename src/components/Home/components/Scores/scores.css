@@ -6,12 +6,22 @@
     margin: 0;
     margin-bottom: 20px;
     padding: 15px;
-    background: rgb(180,180,180);
     background: linear-gradient(0deg, rgb(214, 214, 214) 0%, rgba(246,246,246,1) 100%);
     border-radius: 15%;
     box-shadow: 7px 6px 10px -9px rgba(0,0,0,0.75);
     border: 2px solid darkgray;
 }
+
+.gameClock{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sideGame:hover {
+    background: white;
+}
+
 .sideGame p{
     margin-bottom: 0;
 

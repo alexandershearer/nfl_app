@@ -8,7 +8,6 @@
 .newsPicture{
     border: 2px solid black;
     box-shadow: 7px 6px 25px -9px rgba(0, 0, 0, 0.856);
-    border-radius: 10%;
 }
 
 .newsHeader{
@@ -24,6 +23,7 @@
 }
 
 .newsTitle{
+    font-size: x-large;
     font-weight: 900;
     border-bottom: 2px solid grey;
 }

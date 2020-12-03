@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/footer';
 import Home from './components/Home/home';
+import Records from './components/Records/records'
 
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Route path="/" component={Home} />
-        {/* <Route path="/News" component={ } />
-      <Route path="/" component={ } /> */}
+        <Route exact path="/" component={Home} />
+        <Route exact path="/records" component={Records} />
+        {/* <Route path="/" component={ } /> */}
         <Footer />
       </div>
     </Router>
