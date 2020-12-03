@@ -20,15 +20,15 @@ class News extends Component {
                 <div key={i} >
                     <Media className="newsMedia">
                         <img
-                            width={248}
-                            height={156}
-                            className="align-self-center mr-3"
+                            width={270}
+                            height={200}
+                            className="align-self-center mr-3 newsPicture"
                             src={photo_url}
                             alt="Generic placeholder"
                         />
                         <Media.Body>
-                            <h5>{news.headline}</h5>
-                            <p>{news.description}</p>
+                            <h5 className="newsTitle">{news.headline}</h5>
+                            <p className="newsText">{news.description}</p>
                         </Media.Body>
                     </Media>
                 </div>
@@ -42,8 +42,8 @@ class News extends Component {
             return <h1>Loading...</h1>
         } else {
             return (
-                <Col lg={8}>
-                    <h1>News</h1>
+                <Col lg={8} className="newsCol">
+                    <h1 className="newsHeader">News</h1>
                     {this.getNews()}
                 </Col>
             )

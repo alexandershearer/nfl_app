@@ -69,10 +69,7 @@ class Home extends Component {
                     <Container fluid>
                         <Row>
                             <News news={this.state.news} />
-                            <Col lg={4} className="scoreBox">
-                                <h1 className="scoreHead">Scores</h1>
-                                <Scores scores={this.state.scores} />
-                            </Col>
+                            <Scores scores={this.state.scores} />
                         </Row>
                     </Container>
                 </div >

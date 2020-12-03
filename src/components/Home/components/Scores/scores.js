@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import './scores.css'
 
 class Scores extends Component {
@@ -16,17 +16,15 @@ class Scores extends Component {
             const team1 = teams[0]
             const team2 = teams[1]
             return (
-                <div key={i}>
-                    <Row className="sideGame">
-                        <div className="teamOne">
-                            <img className='teamLogo' src={team1.team.logo} alt='logo'></img>
-                            <p>{game.competitions[0].competitors[0].team.name} : {game.competitions[0].competitors[0].score}</p>
-                        </div>
-                        <div className="teamTwo">
-                            <p>{game.competitions[0].competitors[1].score} : {game.competitions[0].competitors[1].team.name}</p>
-                            <img className='teamLogo' src={team2.team.logo} alt='logo'></img>
-                        </div>
-                    </Row>
+                <div key={i} className="sideGame">
+                    <div className="teamOne">
+                        <img className='teamLogo' src={team1.team.logo} alt='logo'></img>
+                        <p>{game.competitions[0].competitors[0].team.name} : {game.competitions[0].competitors[0].score}</p>
+                    </div>
+                    <div className="teamTwo">
+                        <p>{game.competitions[0].competitors[1].score} : {game.competitions[0].competitors[1].team.name}</p>
+                        <img className='teamLogo' src={team2.team.logo} alt='logo'></img>
+                    </div>
                 </div>
             )
         })
@@ -38,9 +36,10 @@ class Scores extends Component {
             return <h1>Loading...</h1>
         } else {
             return (
-                <div>
+                <Col lg={4} className="scoreBox">
+                    <h1 className="scoreHead">Games</h1>
                     {this.getGameScores()}
-                </div>
+                </Col>
             )
         }
 
