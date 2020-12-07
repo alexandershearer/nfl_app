@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/footer';
 import Home from './components/Home/home';
 import Records from './components/Records/records'
+import Info from './components/Info/info';
+
 
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
         <Navbar />
         <Route exact path="/" component={Home} />
         <Route exact path="/records" component={Records} />
-        {/* <Route path="/" component={ } /> */}
+        <Route exact path="/info" component={Info} />
         <Footer />
       </div>
     </Router>

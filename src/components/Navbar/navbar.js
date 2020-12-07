@@ -41,9 +41,9 @@ class Navbar extends Component {
                             className="navbarLink"
                             activeClassName=""
                             exact
-                            to="/"
+                            to="/info"
                         >
-                            Not Decided
+                            NFL Info
                         </NavLink>
                     </Nav.Item>
                 </Nav>

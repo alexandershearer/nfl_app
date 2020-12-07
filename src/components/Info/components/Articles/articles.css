@@ -1,0 +1,18 @@
+.articleHead{
+    text-align: center;
+    margin-top: 20px;
+}
+.articleCont{
+    margin-top: 10px;
+}
+
+.articlesJumbo{
+   color: black;
+   margin: 15px;
+   text-align: center;
+   border: 2px solid grey;
+}
+
+.jumboText1{
+    font-size: larger;
+}

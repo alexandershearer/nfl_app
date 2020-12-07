@@ -20,8 +20,8 @@ class News extends Component {
                 <div key={i} >
                     <Media className="newsMedia">
                         <img
-                            width={290}
-                            height={230}
+                            width={270}
+                            height={170}
                             className="align-self-center mr-3 newsPicture"
                             src={photo_url}
                             alt="Generic placeholder"
