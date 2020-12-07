@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Jumbotron, Button, Row, Image } from 'react-bootstrap'
+import { Container, Jumbotron, Button, Row, Image, Col } from 'react-bootstrap'
 import './articles.css'
 
 class Articles extends Component {
@@ -31,7 +31,27 @@ class Articles extends Component {
                     </p>
                 </Jumbotron>
 
+                <Row>
+                    <Col lg={7}>
+                        <Jumbotron className="articlesJumbo2">
+                            <h1>Raider's New Home</h1>
+                            <p className="jumboText1">
+                                Allegiant Stadium will seat 65,000. That much is certain. But how much this new facility will
+                                mold the future of Las Vegas remains incalculable. Las Vegas was a sports town long before the
+                                Raiders relocated from Oakland. A stadium like Allegiant only raises the bar.
+                                “It’s the most magnificent stadium and exists in the entertainment capital of the world,”
+                                said Raiders owner Mark Davis. “It is a dream. My family’s dream.”
+                            </p>
+                            <p>
+                                <Button variant="dark" href="https://www.reviewjournal.com/sports/field-of-dreams-allegiant-stadium/">Learn more</Button>
+                            </p>
+                        </Jumbotron>
+                    </Col>
+                    <Col lg={5}>
+                        <Image fluid className="articlePic2" src="https://static.onecms.io/wp-content/uploads/sites/20/2020/09/23/raiders-0-2000.jpg" rounded />
 
+                    </Col>
+                </Row>
             </div>
         )
     }
