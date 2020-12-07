@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Nav } from 'react-bootstrap'
+import { Nav, Form, Button, Row } from 'react-bootstrap'
 import './navbar.css'
 
 class Navbar extends Component {
@@ -16,6 +16,7 @@ class Navbar extends Component {
                 <Nav
                     className="Navbar"
                 >
+                    <h3 className="navTitle">Streamline Football</h3>
                     <Nav.Item>
                         <NavLink
                             className="navbarLink"
@@ -33,7 +34,7 @@ class Navbar extends Component {
                             exact
                             to="/records"
                         >
-                            Records
+                            Team Records
                         </NavLink>
                     </Nav.Item>
                     <Nav.Item>
@@ -46,6 +47,14 @@ class Navbar extends Component {
                             NFL Info
                         </NavLink>
                     </Nav.Item>
+                    <Form>
+                        <Row>
+                            <p className="signupText">Live updates</p>
+                            <Form.Group controlId="formBasicPassword">
+                                <Form.Control type="password" placeholder="Sign-up" />
+                            </Form.Group>
+                        </Row>
+                    </Form>
                 </Nav>
             </div >
         )

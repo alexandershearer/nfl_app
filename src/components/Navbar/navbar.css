@@ -1,20 +1,37 @@
+.navTitle{
+    color: white;
+    font-weight: 800;
+}
+
 .Navbar{
     justify-content: space-evenly;
-    border-bottom: 2px solid grey;
-    background-color: rgb(255, 255, 255);
-    font-size: x-large;
+    border-bottom: 2px solid rgb(167, 167, 167);
+    background-color: rgb(32, 32, 32);
     font-weight: 700;
-    padding-bottom: 7px;
-    padding-top: 7px;
+    padding-top: 20px;
+    align-content: center;
 }
 
 .navbarLink{
     color: black;
     transition: 0.5s;
+    color: rgb(141, 141, 141);
+    font-size: x-large;
 }
 
 .navbarLink:hover{
     text-decoration: none;
-    color: rgb(66, 180, 66);
+    color: rgb(194, 194, 194);
     transition: 0.3s;
+}
+
+.submitButton{
+    padding: 0;
+}
+
+.signupText{
+    color: white;
+    font-size: x-large;
+    margin-right: 5px;
+    font-weight: 300;
 }

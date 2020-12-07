@@ -9,7 +9,7 @@
     background-color: rgb(236, 236, 236);
     border-radius: 15%;
     box-shadow: 7px 6px 10px -9px rgba(0,0,0,0.75);
-    border: 2px solid darkgray;
+    border: 2px solid rgb(116, 116, 116);
     transition: all 0.2s ease-in;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .sideGame:hover {
-    background-color: rgb(187, 233, 190);
+    background-color: rgb(255, 255, 255);
 }
 
 .sideGame p{
@@ -68,5 +68,5 @@
     padding: 0;
     padding-right: 10px;
     padding-left: 10px;
-    border-left: 3px solid rgb(0, 131, 39);
+    border-left: 3px solid rgb(107, 107, 107);
 }

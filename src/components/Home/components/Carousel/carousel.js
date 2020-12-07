@@ -16,13 +16,13 @@ class HomeCarousel extends Component {
                     <Carousel.Item>
                         <img
                             className="d-block"
-                            src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.si.com%2F.image%2FMTY4MTM4MjU2MDMyOTk4Nzg0%2Frussell-wilson-stephon-gilmore-christian-mccaffrey-nick-bosa-nfl-midseason-predictions.jpg"
+                            src="https://sportshub.cbsistatic.com/i/r/2020/10/30/ba69ca45-b9de-456c-b366-63ef5cafdffc/thumbnail/1200x675/aba3c869ba736df2a7d9aeee1eb09f31/steelers-ravens-2016.jpg"
                             alt="Third slide" />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block"
-                            src="https://operations.nfl.com/media/4078/no-sf.jpg?mode=max&width=995"
+                            src="https://sportshub.cbsistatic.com/i/r/2020/06/20/30da748b-7522-4d6c-900c-2ec5e54ad459/thumbnail/1200x675/3bd34bfff0e89e020ab5f300bd95b279/usatsi-13617479.jpg"
                             alt="Third slide" />
                     </Carousel.Item>
                     <Carousel.Item>
