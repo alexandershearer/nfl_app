@@ -15,7 +15,7 @@ class Home extends Component {
 
     async getTeams() {
         try {
-            const response = await fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams')
+            const response = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams')
             const json = await response.json()
             this.setState({
                 teams: json,
