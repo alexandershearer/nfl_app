@@ -50,8 +50,8 @@ class Navbar extends Component {
                     <Form>
                         <Row>
                             <p className="signupText">Live updates</p>
-                            <Form.Group controlId="formBasicPassword">
-                                <Form.Control type="password" placeholder="Sign-up" />
+                            <Form.Group controlId="formBasicEmail">
+                                <Form.Control type="email" placeholder="Sign-up" />
                             </Form.Group>
                         </Row>
                     </Form>
