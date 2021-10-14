@@ -18,7 +18,7 @@ class Home extends Component {
 
     async getScores() {
         try {
-            const responce = await fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard')
+            const responce = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard')
             const json = await responce.json()
             this.setState({
                 scores: json,
@@ -34,7 +34,7 @@ class Home extends Component {
 
     async getNews() {
         try {
-            const responce = await fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/news')
+            const responce = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/news')
             const json = await responce.json()
             this.setState({
                 news: json,
