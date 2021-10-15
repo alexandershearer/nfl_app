@@ -14,7 +14,7 @@ class News extends Component {
         const default_url = "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/2669-national-football-league-primary-dark-2008-1588775048.png?crop=1.00xw:0.872xh;0,0.0653xh&resize=900:*"
         const recentNews = this.props.news.articles
         return recentNews.map((news, i) => {
-            console.log(news.images.length)
+            console.log(news)
             const photo_url = news.images.length > 0 ? news.images[0].url : default_url
             return (
                 <div key={i} >
@@ -27,7 +27,7 @@ class News extends Component {
                             alt="Generic placeholder"
                         />
                         <Media.Body>
-                            <h5 className="newsTitle">{news.headline}</h5>
+                            <a href={news.links.web.href} target="_blank" className="newsTitle">{news.headline}</a>
                             <p className="newsText">{news.description}</p>
                         </Media.Body>
                     </Media>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './scores.css'
 
 class Scores extends Component {
@@ -17,20 +18,23 @@ class Scores extends Component {
             const team2 = teams[1]
             console.log(this.state.score)
             return (
-                <div key={i} className="sideGame">
-                    <div className="teamOne">
-                        <img className='teamLogo' src={team1.team.logo} alt='logo'></img>
-                        <p>{game.competitions[0].competitors[0].team.name} : {game.competitions[0].competitors[0].score}</p>
+                <a className="liveGame" href={game.links[0].href} target="_blank">
+                    <div key={i} className="sideGame">
+                        <div className="teamOne">
+                            <img className='teamLogo' src={team1.team.logo} alt='logo'></img>
+                            <small>{game.competitions[0].competitors[0].team.name} : {game.competitions[0].competitors[0].score}</small>
+                        </div>
+                        <div className="gameClock">
+                            <small>{game.competitions[0].status.type.shortDetail}</small>
+                            {/* <p>{game.competitions[0].status.period} Quarter</p>
+                        <p>{game.competitions[0].status.displayClock}</p> */}
+                        </div>
+                        <div className="teamTwo">
+                            <small>{game.competitions[0].competitors[1].score} : {game.competitions[0].competitors[1].team.name}</small>
+                            <img className='teamLogo' src={team2.team.logo} alt='logo'></img>
+                        </div>
                     </div>
-                    <div className="gameClock">
-                        <p>{game.competitions[0].status.period} Quarter</p>
-                        <p>{game.competitions[0].status.displayClock}</p>
-                    </div>
-                    <div className="teamTwo">
-                        <p>{game.competitions[0].competitors[1].score} : {game.competitions[0].competitors[1].team.name}</p>
-                        <img className='teamLogo' src={team2.team.logo} alt='logo'></img>
-                    </div>
-                </div>
+                </a>
             )
         })
     }

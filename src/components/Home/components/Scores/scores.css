@@ -5,7 +5,7 @@
     align-content: center;
     margin: 0;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 15px 7px;
     background-color: rgb(218, 218, 218);
     border-radius: 15%;
     box-shadow: 7px 6px 10px -9px rgba(0,0,0,0.75);
@@ -13,10 +13,18 @@
     transition: all 0.2s ease-in;
 }
 
+.liveGame {
+    color: black;
+}
+
+.liveGame:hover {
+    color: black;
+}
+
 .gameClock{
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .sideGame:hover {
@@ -38,7 +46,7 @@
     justify-content: flex-end;
     align-items: center;
     flex-basis: 45%;
-    font-size: larger;
+    font-size: large;
     font-weight: 600;
 }
 
@@ -51,7 +59,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-basis: 45%;
-    font-size: larger;
+    font-size: large;
     font-weight: 600;
 }
 
