@@ -22,7 +22,7 @@ class Scores extends Component {
                     <div key={i} className="sideGame">
                         <div className="teamOne">
                             <img className='teamLogo' src={team1.team.logo} alt='logo'></img>
-                            <small>{game.competitions[0].competitors[0].team.name} : {game.competitions[0].competitors[0].score}</small>
+                            <h5>{game.competitions[0].competitors[0].team.name} : {game.competitions[0].competitors[0].score}</h5>
                         </div>
                         <div className="gameClock">
                             <small>{game.competitions[0].status.type.shortDetail}</small>
@@ -30,7 +30,7 @@ class Scores extends Component {
                         <p>{game.competitions[0].status.displayClock}</p> */}
                         </div>
                         <div className="teamTwo">
-                            <small>{game.competitions[0].competitors[1].score} : {game.competitions[0].competitors[1].team.name}</small>
+                            <h5>{game.competitions[0].competitors[1].score} : {game.competitions[0].competitors[1].team.name}</h5>
                             <img className='teamLogo' src={team2.team.logo} alt='logo'></img>
                         </div>
                     </div>
